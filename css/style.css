@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    background-color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*header and nav menu*/
+
+.head{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 45vw 50px;
+    text-align: center;
+    align-items: center;
+    background-image: url(../assets/images/Upup.jpg);
+    background-size: cover;
+    background-position: top;
+    color: whitesmoke;
+}
+
+.exphead{
+    background-image: url(../assets/images/Umiami.jpg);
+}
+
+.porthead{
+    background-image: url(../assets/images/Guitar.jpg);
+    background-position: center;
+}
+
+h1{
+    font-weight: lighter;
+}
+
+.title{
+    text-align: left;
+    font-size: 5em;
+    align-self: flex-end;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    line-height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu > a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+.linkborder{
+    border-right: 2px solid whitesmoke;
+}
+
+.menu > a:hover{
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+/*content*/
+
+.about{
+    text-align: center;
+    color: black;
+}
+
+.abouthead{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.aboutbody{
+    font-size: 20px;
+    font-weight: normal;
+    padding: 0px 15%;
+    text-align: justify;
+}
+
+#examplepic{
+    height: auto;
+    width: 50%;
+    padding-top: 20px;
+}
+
+.expgrid{
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-row-gap: 15px;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 50px;
+    border-left: 2px solid darkgray;
+    position: relative;
+}
+
+.expgridbody{
+    align-self: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 2px solid darkgray;
+}
+
+.expbody{
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 5%;
+    padding-right: 15%;
+    text-align: left;
+}
+
+.iconpic{
+    max-height: 300px;
+    max-width: auto;
+    padding-left: 5%;
+    object-fit: scale-down;
+    margin: auto;
+}
+
+.examplehead{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.foot{
+    text-align: center;
+    border-top: 2px solid gray;
+}
+
+.foot img{
+    height: 45px;
+    padding: 10px;
+}
