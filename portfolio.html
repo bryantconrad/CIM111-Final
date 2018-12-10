@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="reset" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/slicknav.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <title>Conrad Bryant</title>
     </head>
@@ -16,32 +17,31 @@
               WORK
             </div>
                 
-            <nav class="menu">
-              <a href="index.html" class="linkborder">ABOUT</a>
+            <nav id="menu">
+              <a href="index.html" class="linkborder">HOME</a>
+              <a href="about.html" class="linkborder">ABOUT</a>
               <a href="experience.html" class="linkborder">EXPERIENCE</a>
-              <a href="#">WORK</a>
+              <a href="#.html" class="linkborder">MY WORK</a>
+              <a href="contact.html">CONTACT</a>
             </nav>
           </header>
 
           <div class="about">
 
-            <br>
-            <p class="examplehead">LINKS</p>
-            <a class="aboutbody" href="https://github.com/bryantconrad">Visit my Github</a>
-            <br>
-            <br>
-            <a class="aboutbody" href="https://drive.google.com/drive/folders/11BCgs4FLe_mg4ay8h4mauRIBIuo2QxuC">See/download my compositions</a>
-            <br>
-            <br>
-            <a class="aboutbody" href="https://www.wvum.org/">Visit WVUM's website to see some of our web staff's work</a>
-            <br>
-            <br>
-            <a class="aboutbody" href="https://www.facebook.com/pg/miamiupup/about/">UPup's Facebook</a>
-            <br>
-            <br>
-            <a class="aboutbody" href="#">Download my resume (placeholder)</a>
-            <br>
-            <br>
+            <p class="linkshead">LINKS</p>
+            <div class="linksgrid">
+            <a class="linksbody link1" href="https://github.com/bryantconrad" target="blank">Visit my Github</a>
+
+            <a class="linksbody link2" href="https://www.facebook.com/pg/miamiupup/about/" target="blank">UPup's Facebook</a>
+
+            <a class="linksbody link3" href="https://www.wvum.org/" target="blank">Visit WVUM's website to see some of our web staff's work</a>
+
+            <a class="linksbody link4" href="https://drive.google.com/drive/folders/11BCgs4FLe_mg4ay8h4mauRIBIuo2QxuC" target="blank">See/download my compositions</a>
+            
+            <a class="linksbody link5" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="blank">Listen to my music</a>
+
+            <a class="linksbody link6" href="#">Download my resume</a>
+
           </div>
 
           <footer class="foot">
@@ -50,16 +50,17 @@
               <img src="assets/images/instagram.svg">
               <img src="assets/images/googleplus.svg">
               <br>
-              <p>CLB213@miami.edu</p>
-              <p>786-340-0656</p>
-              <p>1101 Stanford Drive, Coral Gables, FL 33146</p>
           </footer>
     
         </div>
 
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/jquery.tabslet.min.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
-        
+        <script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+        <script>
+            $(function(){
+                $('#menu').slicknav();
+            });
+        </script>
+
     </body>
 </html>

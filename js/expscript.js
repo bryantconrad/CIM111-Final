@@ -12,14 +12,16 @@ $(document).ready(function() {
 
     $("#showbtn").click(function(){
         if(hideStatus == true){
-            $("#expgridall").slideDown(300);
+            $("#expgridall").slideDown(500);
+            $(".tabs").hide(500);
             hideStatus = false;
-            $("#showbtn").html("Hide all");
+            $("#showbtn").html("Tabs view");
         }
         else{
-            $("#expgridall").slideUp(300);
+            $("#expgridall").slideUp(500);
+            $(".tabs").show(500);
             hideStatus = true;
-            $("#showbtn").html("Show all");
+            $("#showbtn").html("List view");
         }
     });
 

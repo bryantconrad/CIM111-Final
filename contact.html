@@ -12,33 +12,41 @@
 
     <body>
       <div class="container">
-        <header class="head">
+        <header class="head contacthead">
           <div class="title">
-            CONRAD BRYANT
+            CONTACT
           </div>
 
           <nav id="menu">
-            <a href="#" class="linkborder">HOME</a>
+            <a href="index.html" class="linkborder">HOME</a>
             <a href="about.html" class="linkborder">ABOUT</a>
             <a href="experience.html" class="linkborder">EXPERIENCE</a>
             <a href="portfolio.html" class="linkborder">MY WORK</a>
-            <a href="contact.html">CONTACT</a>
+            <a href="#">CONTACT</a>
           </nav>
 
         </header>
 
         <div class="about">
-          <p class="abouthead">WELCOME TO MY SITE!</p>
+          <p class="abouthead">CONTACT ME</p>
 
-          <div id="my-slide">
-              <img data-lazy-src="assets/images/joey.jpeg" />
-              <img data-lazy-src="assets/images/bermie.jpeg" />
-              <img data-lazy-src="assets/images/romie.jpeg" />
-              <img data-lazy-src="assets/images/ustatue.jpeg" />
-              <img data-lazy-src="assets/images/stickers.jpeg" />
+          <div class="contact">
+          <p>CLB213@miami.edu</p>
+          <p>786-340-0656</p>
+          <p>1101 Stanford Drive, Coral Gables, FL 33146</p>
           </div>
 
-          <p class="homebody">Please explore my site to learn more about me!</p>
+          <form>
+              <fieldset>
+                <legend>Send me a message!</legend>
+                Type a message for me here and leave your contact information, and I will get back to you as soon as possible:<br>
+                <textarea id="textinput"></textarea><br>
+                <input type="submit" value="Submit" id="submit">
+              </fieldset>
+
+          </form>
+
+          <p class="contact">Visit my social media using the icons in the footer! (Not actually linked for the purposes of this project)</p>
           <br>
           <br>
         </div>
@@ -54,19 +62,9 @@
       </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.devrama.slider.min.js">
-    </script>
-    
-    <script type="text/javascript">
-    
-      $(document).ready(function(){
-          $('#my-slide').DrSlider();
-      });
-    </script>
-
+    <script type="text/javascript" src="js/contactscript.js"></script>
     <script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
     <script>
-
         $(function(){
             $('#menu').slicknav();
         });

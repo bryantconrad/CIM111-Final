@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="reset" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/slicknav.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <title>Conrad Bryant</title>
     </head>
@@ -17,15 +18,19 @@
             EXPERIENCE
           </div>
               
-          <nav class="menu">
-            <a href="index.html" class="linkborder">ABOUT</a>
+          <nav id="menu">
+            <a href="index.html" class="linkborder">HOME</a>
+            <a href="about.html" class="linkborder">ABOUT</a>
             <a href="#" class="linkborder">EXPERIENCE</a>
-            <a href="portfolio.html">WORK</a>
+            <a href="portfolio.html" class="linkborder">MY WORK</a>
+            <a href="contact.html">CONTACT</a>
           </nav>
         </header>
 
         <div class="about">
           <p class="abouthead">EDUCATION AND EXPERIENCE</p>
+
+          <button id="showbtn">List view</button>
 
           <div class="tabs">
               <ul class="horizontal">
@@ -72,13 +77,13 @@
                   <div class="expgridbody">
                     <p class="expbody"><i>Training Chair, UPup</i></p>
                     <p class="expbody"><i>April 2018-Present</i></p>
-                    <p class="expbody">As a certified trainer with our on-campus service dog training organization, UPup, I work one-on-one with our dogs several times a week. I also help organize fundraising events and raise awareness to enhance public knowledge on service dogs.</p>
+                    <p class="expbody">As Head of Training of UM's on-campus service dog training organization, UPup, I am in charge of arranging and managing our training schedule involving close to 40 certified trainers. I also help organize and run fundraising events and raise awareness to enhance public knowledge on service dogs, and work one-on-one with our dogs several times a week. </p>
                   </div>
                 </div>
               </span></div>
             </div>
 
-            <div class="expgrid" id="#expgridall">
+            <div class="expgrid" id="expgridall">
               <img class="iconpic" src="assets/images/Umlogo.png">
               <div class="expgridbody">
                 <p class="expbody"><i>Expected Graduation: May 2021</i></p>
@@ -106,7 +111,7 @@
               <div class="expgridbody">
                 <p class="expbody"><i>Training Chair, UPup</i></p>
                 <p class="expbody"><i>April 2018-Present</i></p>
-                <p class="expbody">As a certified trainer with our on-campus service dog training organization, UPup, I work one-on-one with our dogs several times a week. I also help organize fundraising events and raise awareness to enhance public knowledge on service dogs.</p>
+                <p class="expbody">As Head of Training of UM's on-campus service dog training organization, UPup, I am in charge of arranging and managing our training schedule involving close to 40 certified trainers. I also help organize and run fundraising events and raise awareness to enhance public knowledge on service dogs, and work one-on-one with our dogs several times a week.</p>
               </div>
 
             </div>
@@ -120,9 +125,6 @@
           <img src="assets/images/instagram.svg">
           <img src="assets/images/googleplus.svg">
           <br>
-          <p>CLB213@miami.edu</p>
-          <p>786-340-0656</p>
-          <p>1101 Stanford Drive, Coral Gables, FL 33146</p>
         </footer>
   
       </div>
@@ -131,6 +133,12 @@
       <script type="text/javascript" src="js/jquery.tabslet.min.js"></script>
       <script type="text/javascript" src="js/script.js"></script>
       <script type="text/javascript" src="js/expscript.js"></script>
+      <script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+      <script>
+          $(function(){
+              $('#menu').slicknav();
+          });
+      </script>
       
     </body>
 </html>
