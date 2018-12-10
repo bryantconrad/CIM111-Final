@@ -446,4 +446,8 @@ input[type="submit"]:hover{
         margin-right: 25px;
     }
 
+    .title{
+        font-size: 3em;
+    }
+
 }
